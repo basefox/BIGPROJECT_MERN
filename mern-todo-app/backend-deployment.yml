@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: raxer/back:latest
+          image: vanillavladimir/backend:latest
           ports:
             - containerPort: 4000
               name: nodejs-port
