@@ -2,10 +2,15 @@ apiVersion: v1
 kind: Service
 metadata:
   name: server-service
+  namespace: backend-staging
 spec:
   ports:
     - port: 4000
       protocol: TCP
   selector:
     app: server
-  type: LoadBalancer
+#  template:
+#    metadata:
+#      labels:
+#        name: server-service
+#  type: LoadBalancer
